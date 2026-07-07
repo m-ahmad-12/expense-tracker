@@ -77,3 +77,37 @@
   border-color: #ef4444;
   color: #ffffff;
 }
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 720px;
+    margin: 28px auto 0;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 20px auto 0;
+    padding: 0 16px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 6px;
+  }
+}

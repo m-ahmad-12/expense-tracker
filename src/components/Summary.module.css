@@ -41,3 +41,41 @@
   font-weight: 700;
   color: #ef4444;
 }
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 720px;
+    margin: 28px auto 0;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    padding: 0 16px;
+  }
+
+  .card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .balance,
+  .income,
+  .expense {
+    font-size: 1.4rem;
+  }
+
+  .label {
+    font-size: 0.75rem;
+  }
+}

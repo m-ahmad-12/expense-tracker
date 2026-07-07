@@ -12,6 +12,21 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 600px) {
+  /* prevent large fixed background render on small devices */
+  body {
+    background-attachment: scroll;
+  }
+
+  :root {
+    font-size: 15px;
+  }
+
+  html, body {
+    padding: 0 6px;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
